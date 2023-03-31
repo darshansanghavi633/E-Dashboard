@@ -1,13 +1,13 @@
 {
   "name": "e-dashboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "e-dashboard",
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Darshan Sanghavi",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,5 +16,21 @@
     "mongodb": "^5.1.0",
     "mongoose": "^6.10.0",
     "nodemon": "^2.0.21"
-  }
+  },
+  "engines": {
+    "node": "18.15.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshansanghavi633/E-Dashboard.git"
+  },
+  "keywords": [
+    "e-dashbord",
+    "e-commerce"
+  ],
+  "bugs": {
+    "url": "https://github.com/darshansanghavi633/E-Dashboard/issues"
+  },
+  "homepage": "https://github.com/darshansanghavi633/E-Dashboard#readme"
 }
