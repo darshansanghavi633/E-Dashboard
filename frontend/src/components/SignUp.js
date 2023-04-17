@@ -18,7 +18,7 @@ useEffect(()=>{
 
     const collectData= async ()=>{
         console.log(name,email,password);
-        let result = await fetch("http://127.0.0.1:5000/signup",{
+        let result = await fetch("https://e-dashboard-darshansanghavi.onrender.com/signup",{
           method:"post",
           body:JSON.stringify({name,email,password}),
           headers:{

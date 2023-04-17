@@ -15,7 +15,7 @@ export default function Login() {
 
   const handleLogin=async()=>{
     console.log(email,password);
-    let result = await fetch("http://127.0.0.1:5000/login",{
+    let result = await fetch("https://e-dashboard-darshansanghavi.onrender.com/login",{
           method:"post",
           body:JSON.stringify({email,password}),
           headers:{

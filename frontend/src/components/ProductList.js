@@ -10,7 +10,7 @@ export default function ProductList() {
   const navigate = useNavigate();
 
   const getProducts = async () => {
-    let result = await fetch("http://localhost:5000/products",{
+    let result = await fetch("https://e-dashboard-darshansanghavi.onrender.com/products",{
       headers:{
         authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
       }
@@ -20,7 +20,7 @@ export default function ProductList() {
   };
 
   const deleleProduct = async (id) => {
-    let result = await fetch(`http://localhost:5000/product/${id}`, {
+    let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/product/${id}`, {
       method: "delete",
       headers:{
         authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -37,7 +37,7 @@ export default function ProductList() {
   const handleSearch = async (event) => {
     let key = event.target.value;
     if (key) {
-      let result = await fetch(`http://localhost:5000/search/${key}`,{
+      let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/search/${key}`,{
         headers:{
           authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
         }

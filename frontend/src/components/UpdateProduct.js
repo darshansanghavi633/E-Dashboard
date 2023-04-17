@@ -9,7 +9,7 @@ export default function UpdateProduct() {
   const params = useParams();
 
   const handleUpdateProduct = async () => {
-    let result = await fetch(`http://127.0.0.1:5000/product/${params.id}`, {
+    let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/${params.id}`, {
       method: "put",
       body: JSON.stringify({ name, price, category, company }),
       headers: {
@@ -23,7 +23,7 @@ export default function UpdateProduct() {
   };
   useEffect(() => {
     const updateProductDetails = async () => {
-      let result = await fetch(`http://localhost:5000/product/${params.id}`,{
+      let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/${params.id}`,{
         headers:{
           authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
         }

@@ -14,14 +14,13 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongodb": "^5.1.0",
+    "mongodb": "^5.2.0",
     "mongoose": "^6.10.0",
     "nodemon": "^2.0.21"
   },
   "engines": {
     "node": "18.15.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darshansanghavi633/E-Dashboard.git"

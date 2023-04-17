@@ -14,7 +14,7 @@ export default function AddProduct() {
             return false;
         }
         const userId = JSON.parse(localStorage.getItem('user'))._id;
-        let result = await fetch("http://127.0.0.1:5000/product",{
+        let result = await fetch("https://e-dashboard-darshansanghavi.onrender.com/product",{
           method:"post",
           body:JSON.stringify({name,price,category,company,userId}),
           headers:{
