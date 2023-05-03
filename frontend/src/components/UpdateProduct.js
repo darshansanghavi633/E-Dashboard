@@ -23,7 +23,7 @@ export default function UpdateProduct() {
   };
   useEffect(() => {
     const updateProductDetails = async () => {
-      let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/${params.id}`,{
+      let result = await fetch(`https://e-dashboard-darshansanghavi.onrender.com/product/${params.id}`,{
         headers:{
           authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
         }
